@@ -102,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
                 int id=data.getIntExtra(AddEditNoteActivity.EXTRA_ID,-1);
                 if (id==-1){
                     Toast.makeText(this, "cant be updated", Toast.LENGTH_SHORT).show();
-                    Log.d("1411", "onActivityResult: ");
+                    Log.d("1471", "onActivityResult: ");
                     return;
                 }else {
                     String title = data.getStringExtra(AddEditNoteActivity.EXTRA_TITLE);
