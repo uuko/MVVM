@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -101,6 +102,7 @@ public class MainActivity extends AppCompatActivity {
                 int id=data.getIntExtra(AddEditNoteActivity.EXTRA_ID,-1);
                 if (id==-1){
                     Toast.makeText(this, "cant be updated", Toast.LENGTH_SHORT).show();
+                    Log.d("1411", "onActivityResult: ");
                     return;
                 }else {
                     String title = data.getStringExtra(AddEditNoteActivity.EXTRA_TITLE);
